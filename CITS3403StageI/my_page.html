@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--BIP! by Michael Stewart 20947715-->
+		<!--Written for a project for CITS3403 at the University of Western Australia-->
+		<title>BIP! - My Page</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="shortcut icon" href="images/icons/bip_icon_small.ico" >
+		<link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre:700%7CAlef:400,700' rel='stylesheet' type='text/css'>
+		<link href="css/bip_stylesheet.css"  rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+		<script type="text/javascript" src="javascript/bip_js.js"></script>
+	</head>
+	<body>
+
+		<!--The Navigation Bar-->
+		<div id="navbar">
+			<div class="container-navbar">
+				<ul id="nav">
+					<li><a class="bip" href="my_page.html"></a></li>
+					<li><a href="my_page.html">My Page</a></li>
+					<li><a href="online_posts.html">Browse All Posts</a></li>
+					<li><a href="followed_blogs.html">Followed Blogs</a></li>
+					<li style="float:right;"><a href="home.html">Log out</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--The Global Container, to contain everything - the nav box, main content, and RSS Box-->
+		<div id="global-container">
+	
+			<!--The Navigation Box, on the left of the screen-->
+			<div id="navbox">
+				<h1><a style="color:#3B9AFF;" href="my_page.html">MICHAEL STEWART</a></h1>
+				<hr/>
+				<h2><a style="color:#3B9AFF;" href="my_page.html" title="View your BIP! page, with all of your posts"><i class="fa fa-home fa-2x" style="color: #3B9AFF;"></i>&nbsp;&nbsp;My Page (2 posts)</a></h2>
+				<h2><a href="new_post.html"  title="Write a new post for your page"><i class="fa fa-pencil fa-2x"></i>&nbsp;&nbsp;Write New Post</a></h2>
+				<h2><a href="followers.html" title="View all of your BIP! followers"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Followers (5)</a></h2>
+				<h2><a href="about_me.html"  title="Customise your blog description and avatar"><i class="fa fa-user fa-2x"></i>&nbsp;&nbsp;About Me</a></h2>
+				<br/>
+				<h1><a href="online_posts.html">BIP! COMMUNITY</a></h1>
+				<hr/>
+				<h2><a href="online_posts.html" title="Browse through the posts of BIP! users on the web"><i class="fa fa-globe fa-2x"></i>&nbsp;&nbsp;Browse All Posts</a></h2>
+				<h2><a href="followed_blogs.html" title="Browse through the posts of the BIP! blogs you have followed"><i class="fa fa-heart fa-2x"></i>&nbsp;&nbsp;Followed Blogs</a></h2>
+				<h2><a href="manage_followed.html"  title="Manage which blogs you follow"><i class="fa fa-group fa-2x"></i>&nbsp;&nbsp;Manage Followed (4)</a></h2>
+				<br/>
+				<h1><a href="about.html">MISCELLANEOUS</a></h1>
+				<hr/>
+				<h2><a href="about.html" title="Read stuff written by the creator of BIP!"><i class="fa fa-book fa-2x"></i>&nbsp;&nbsp;About BIP!/References</a></h2>
+				<h2><a href="RSS.xml" title="View the RSS feed of BIP!.com" target="_blank" ><i class="fa fa-rss-square fa-2x"></i>&nbsp;&nbsp;RSS Feed</a></h2>
+				<h2><a href="README.txt" title="View the readme of this site" target="_blank" ><i class="fa fa-info-circle fa-2x"></i>&nbsp;&nbsp;View Readme</a></h2>
+			</div>		
+
+
+			<!--The container for the main content-->
+			<div class="mid-container">
+	
+				<!--Contains the user's avatar and description-->
+				<div id="description-bit">
+					<br/><br/>	
+					<h1>
+						Michael Stewart's Page
+						<a href="new_post.html" style="color:white; float:right" class="button-basic"><i class="fa fa-pencil fa-lg"></i>&nbsp;&nbsp;Write new post</a>
+					</h1>
+					<br/>
+					<hr/>
+			
+					<!--Contains the avatar of the user-->
+					<div id="description-bit-profilebox" >
+						<a href="about_me.html">
+						<img src="images/avatars/pingu.jpg" width="300" height="240" title="Visit your About Me page"  alt=""/></a>
+					</div>
+
+					<!--The user's description goes in here-->
+					<div id="description-bit-descbox">
+						<h2>
+							Description <a href="about_me.html" style="font-size:small;">(edit)</a>
+							<span style="float:right;">
+								<span title="You have made 2 posts in total"><i class="fa fa-file-text-o"></i>&nbsp;2</span>
+								&nbsp;&nbsp;
+								<a href="followers.html" title="View all of your BIP! followers">
+									<i class="fa fa-thumbs-up"></i>&nbsp;5
+								</a>
+							</span>
+						</h2>
+						<p style="text-align:justify; text-justify:inter-word;">
+							Welcome to my BIP! blog. This is My Page, where users will be directed to upon logging in.
+							From here, users can access essentially the entire website. Users may make posts, view their
+							followers, edit the information displayed to other users, as well as view posts from other users
+							online and even add followers.
+						</p>
+						<h6><span style="position:absolute; bottom: 16px; right: 20px">Joined on March 3 2014</span></h6>
+					</div>
+				</div>	
+				<br/>
+
+				<!--A small strip to allow someone to navigate to earlier posts, or later posts. Hopefully this can be implemented in Ruby on Rails-->
+				<hr/>
+				<span style="float:left; margin-top: 10px;"><a href="#" title="Just showing what this button would look like!" class="button-pages"><i class="fa fa-chevron-circle-left"></i>&nbsp;&nbsp;More recent</a></span>
+				<span style="float:right; margin-top: 10px"><a title="There are no previous posts to display." class="button-pages disabled">Less recent&nbsp;&nbsp;<i class="fa fa-chevron-circle-right"></i></a></span>
+				<h3 style="margin-left: auto; margin-right: auto; width: 260px; color: #0058B5; margin-top: 13px; margin-bottom:15px"> <span style="color: #404040">Showing</span> 1-2 <span style="color: #404040">of</span> 2 <span style="color: #404040">posts</span></h3>
+				<hr/>
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+						<div class="container-nicebox-tight" style="height: 64px; margin-left: 0px;">
+							<h1 style="margin-right: 100px"> 
+									How Hard was it to Supply Arrows to Archers in Ancient Battles?
+							</h1>
+							<span style="top: -10px; right: -35px; position:absolute"><a href="edit_post.html" class="button-white"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></span>
+						</div>
+						<p>When you are talking about the period of the English Longbowmen you are essentially talking about Henry V and his campaign in France culminating with the battle of Agincourt. First and foremost, and I can tell you for Henry stocking enough arrows for his archers was a huge task requiring a national effort.</p>
+						<p>England was bankrupt and haphazardly managed when Henry V took the throne, and he spent much of the first part of his reign reforming every part of the government. The greater part of this involved consolidating his recently reconquered Welsh holdings and doing a massive audit and restructuring of the Royal estates, both of which generated a tremendous amount of ready cash. He also started reforming his military on the supply and organization side. </p>
+						<p>You are absolutely right that archers could run out of arrows in a few minutes of battle. An archer had to be able to fire ten arrows in a minute, and good archers could fire much quicker. Arrows were carried in sheaves of 24, archers carried 2 sheaves on them and a few spares, so a typical English Longbowman of Henry V's day could expend their entire combat load in between 4 and 8 minutes of steady firing. Realistically they probably would not fire at max rate for a stretch of 4-8 minutes very often, but still, they needed an ample supply to fight a battle lasting hours.</p>
+						<p>The arrows themselves are difficult. They are made of multiple pieces which each have their own supply train and manufacturing difficulty. For long range arrows the arrow head is made of iron, but two compounds, a hard edge and a softer core to absorb shock on impact, a 30 inch shaft constructed of lighter wood which has to be basically perfectly straight or it's useless. The fletchings are made of goose feathers, and this requires the plucking of a lot of geese. Shorter range arrows are a little shorter, heavier, made of a thicker piece of hard wood like ash and have a head called a bodkin which is very narrow for penetrating armor at close range.</p>
+						<p>Almost immediately on taking the throne Henry V appointed fletcher (a professional arrow maker) Nicholas Mynot Keeper of the King's Arrows and set him up in the Tower of London with a staff and healthy budget for building up stocks. This was a separate job from the King's Bowyer, responsible for making bows and with the right to commandeer any wood in the country for that purpose. The Keeper of the King's Arrows began production and farmed production out to other fletchers, making orders for arrows in the tens of thousands. </p>
+						<p>The production of arrows required arrow heads made by smiths by the barrel, tens of thousands of shafts, and goose feathers literally in the millions (there is an order recorded for over 1.1 million goose feathers for the King's arrow making facilities, and that is one single order). Because of all this planning, effort, and expenditure of resources Henry V was exceptionally well equipped when he set off for France. I would caution you though that while Henry V is the obvious example for a question on the logistics of English Longbowmen he was an uncommonly capable administrator and not every monarch would have been so well prepared for a campaign.</p>
+						<p>Robert Hardy's Longbow: A Social and Military History goes into a lot of detail on all things Longbow related, I find Juliet Barker's Agincourt very valuable for information on Henry V's campaign preparations.</p>
+						<p>This post was written by Backgrinder, from Reddit.</p>
+						<hr/>
+						<h6>
+							Posted on March 6 2014 at 11:38pm
+							<span style="float:right;">	
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="How Hard was it to Supply Arrows to Archers in Ancient Battles?" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/2.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/2.html" target="_blank" class="button-fb">
+									<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+
+				<br/><hr/><br/>
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+						<div class="container-nicebox-tight" style="height: 64px; margin-left: 0px;">
+							<h1>
+								The History of Ceiling Fans
+							</h1>
+							<span style="top: -10px; right: -35px; position:absolute"><a href="edit_post.html" class="button-white"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></span>
+						</div>
+						<p>The first ceiling fans appeared in the early 1860s and 1870s, in the United States. At that time, they were not powered by any form of electric motor. Instead, a stream of running water was used, in conjunction with a turbine, to drive a system of belts which would turn the blades of two-blade fan units. These systems could accommodate several fan units, and so became popular in stores, restaurants, and offices. Some of these systems still survive today, and can be seen in parts of the southern United States where they originally proved useful. The electrically powered ceiling fan was invented in 1882 by Philip Diehl; he had engineered the electric motor used in the first electrically powered Singer sewing machines, and in 1882 adapted that motor for use in a ceiling-mounted fan. Each fan had its own self-contained motor unit, with no need for belt drive. He was almost immediately up against fierce competition due to the commercial success of the ceiling fan. He continued to make improvements to his invention; by creating a light kit fitted to the ceiling fan to combine both functions in one unit. By World War I most ceiling fans were made with four blades instead of the original two, which made fans quieter and allowed them to circulate more air.</p>
+						<p>By the 1920s ceiling fans had become commonplace in the United States, and had started to take hold internationally. From the Great Depression of the 1930s until the 1950s ceiling fans faded out of vogue in the U.S., almost falling into total disuse in the U.S.; those which remained were considered items of nostalgia.</p>
+						<p>Meanwhile, they had become very popular in other countries, particularly those with hot climates but without the infrastructure or resources for high-energy-consuming and complex air conditioning equipment. In the 1960s some East Asian manufacturers started exporting ceiling fans to the United States. They caught on slowly at first, but found great success during the energy crisis of the late 1970s, since ceiling fans consume far less energy than air conditioning units.</p>
+						<p>Due to this renewed commercial success, many American manufacturers also started to produce, or significantly increase production of, ceiling fans. The Casablanca Fan Company was founded in 1974. Other American manufacturers of the time included the Hunter Fan Co. (which was then a division of Robbins & Myers, Inc), FASCO (F. A. Smith Co.), Emerson Electric, and Lasko; the latter two were often branded as Sears-Roebuck. </p>
+						<p>During the rest of the 1970s, and through to the late 1980s, ceiling fans remained popular in the United States. Many small American manufacturers, most of them rather short-lived, started making ceiling fans. Throughout the 1980s the balance of sales between American-made ceiling fans and those imported from Asian manufacturers changed dramatically. Even the most basic U.S-made fans sold at $100 to $250, while the most expensive imported fans rarely exceeded $85.</p>
+						<p>In the United States, due to the ever-decreasing cost of air conditioning, ceiling fan sales once again started to decline from the early to mid-1990s. With the reduction in sales came a reduction in research and development by U.S. manufacturers, and features were dropped to reduce costs. Once-standard features, such as solid wood blades, built-in variable-speed dials, high-quality stator/rotor ("stack") motors, and die-cast steel construction, were largely replaced by cheap, standardized parts.</p>
+						<p>Since 2000 important inroads have been made by companies offering higher price ceiling fans with more decorative value. In 2001, Washington Post writer Patricia Dane Rogers wrote, “Like so many other mundane household objects, these old standbys are going high-style and high-tech.” Newer companies such as Minka, Fanimation, The Modern Fan Co., The Period Arts Fan Co. and Monte Carlo brought well-built fans with distinctive design to the market.</p>
+						<p>This post was taken directly from Wikipedia.</p>
+						<hr/>
+						<h6>
+							Posted on March 6 2014 at 10:15pm
+							<span style="float:right;">	
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="The History of Ceiling Fans" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/1.html" data-lang="en" >Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/1.html" target="_blank" class="button-fb">
+									<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+				<br/>
+
+				<hr/>
+				<!--A small strip to allow someone to navigate to earlier posts, or later posts. Hopefully this can be implemented in Ruby on Rails-->
+				<span style="float:left; margin-top: 10px;"><a href="#" title="Just showing what this button would look like!" class="button-pages"><i class="fa fa-chevron-circle-left"></i>&nbsp;&nbsp;More recent</a></span>
+				<span style="float:right; margin-top: 10px"><a title="There are no previous posts to display." class="button-pages disabled">Less recent&nbsp;&nbsp;<i class="fa fa-chevron-circle-right"></i></a></span>
+				<h3 style="margin-left: auto; margin-right: auto; width: 260px; color: #0058B5; margin-top: 13px; margin-bottom:15px"> <span style="color: #404040;">Showing</span> 1-2 <span style="color: #404040">of</span> 2 <span style="color: #404040">posts</span></h3>
+
+
+
+				<!--The footer-->
+				<div id="footer">
+					<hr/>
+					<p style="line-height:160%;">
+						<span style="float:left">
+							<img style="float:left; margin-right: 16px; margin-top: -10px" src="images/logos/bip_footer.png" width="100" alt=""/>
+							Copyright © Michael Stewart 2014. This site is a student project and is not-for-profit.<br style="margin-bottom: 10px"/>
+							<a href="about.html"><i class="fa fa-book fa-lg"></i>&nbsp;&nbsp;About BIP!/References</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="README.txt" target="_blank"><i class="fa fa-info-circle fa-lg"></i>&nbsp;&nbsp;View site readme</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="RSS.xml"><i class="fa fa-rss-square fa-lg"></i>&nbsp;RSS Feed</a>
+						</span>
+						<span style="float:right;">
+							This page was <a href="http://validator.w3.org/check/referer" target="_blank"> successfully validated</a> as HTML5 at W3.org.
+							<a href="http://validator.w3.org/check/referer" target="_blank"><img style="float:right" src="images/icons/HTML5_Logo_128.png" width="64" alt=""/></a><br/>				
+							<a style="float: right; margin-top: 10px" href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+									<img style="border:0;width:88px;height:31px"
+											src="http://jigsaw.w3.org/css-validator/images/vcss"
+											alt="Valid CSS!" />
+							</a>
+							<br/><br/>
+						</span>
+					</p>			
+				</div>	
+			</div>	
+
+		</div>
+	</body>
+</html>

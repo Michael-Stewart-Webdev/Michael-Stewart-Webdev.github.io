@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--BIP! by Michael Stewart 20947715-->
+		<!--Written for a project for CITS3403 at the University of Western Australia-->
+		<title>BIP! - Sample User's Page</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="shortcut icon" href="images/icons/bip_icon_small.ico" >
+		<link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre:700%7CAlef:400,700' rel='stylesheet' type='text/css'>
+		<link href="css/bip_stylesheet.css"  rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+		<script type="text/javascript" src="javascript/bip_js.js"></script>
+	</head>
+	<body>
+
+		<!--The Navigation Bar-->
+		<div id="navbar">
+			<div class="container-navbar">
+				<ul id="nav">
+					<li><a class="bip" href="my_page.html"></a></li>
+					<li><a href="my_page.html">My Page</a></li>
+					<li><a href="online_posts.html">Browse All Posts</a></li>
+					<li><a href="followed_blogs.html">Followed Blogs</a></li>
+					<li style="float:right;"><a href="home.html">Log out</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--The Global Container, to contain everything - the nav box, main content, and RSS Box-->
+		<div id="global-container">
+	
+			<!--The Navigation Box, on the left of the screen-->
+			<div id="navbox">
+				<h1><a href="my_page.html">MICHAEL STEWART</a></h1>
+				<hr/>
+				<h2><a href="my_page.html" title="View your BIP! page, with all of your posts"><i class="fa fa-home fa-2x"></i>&nbsp;&nbsp;My Page (2 posts)</a></h2>
+				<h2><a href="new_post.html"  title="Write a new post for your page"><i class="fa fa-pencil fa-2x"></i>&nbsp;&nbsp;Write New Post</a></h2>
+				<h2><a href="followers.html" title="View all of your BIP! followers"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Followers (5)</a></h2>
+				<h2><a href="about_me.html"  title="Customise your blog description and avatar"><i class="fa fa-user fa-2x"></i>&nbsp;&nbsp;About Me</a></h2>
+				<br/>
+				<h1><a style="color:#3B9AFF;" href="online_posts.html">BIP! COMMUNITY</a></h1>
+				<hr/>
+				<h2><a href="online_posts.html" title="Browse through the posts of BIP! users on the web"><i class="fa fa-globe fa-2x"></i>&nbsp;&nbsp;Browse All Posts</a></h2>
+				<h2><a style="color:#3B9AFF;" href="followed_blogs.html" title="Browse through the posts of the BIP! blogs you have followed"><i class="fa fa-heart fa-2x" style="color:#3B9AFF;"></i>&nbsp;&nbsp;Followed Blogs</a></h2>
+				<h2><a href="manage_followed.html"  title="Manage which blogs you follow"><i class="fa fa-group fa-2x"></i>&nbsp;&nbsp;Manage Followed (4)</a></h2>
+				<br/>
+				<h1><a href="about.html">MISCELLANEOUS</a></h1>
+				<hr/>
+				<h2><a href="about.html" title="Read stuff written by the creator of BIP!"><i class="fa fa-book fa-2x"></i>&nbsp;&nbsp;About BIP!/References</a></h2>
+				<h2><a href="RSS.xml" title="View the RSS feed of BIP!.com" target="_blank" ><i class="fa fa-rss-square fa-2x"></i>&nbsp;&nbsp;RSS Feed</a></h2>
+				<h2><a href="README.txt" title="View the readme of this site" target="_blank" ><i class="fa fa-info-circle fa-2x"></i>&nbsp;&nbsp;View Readme</a></h2>
+			</div>		
+
+
+			<!--The container for the main content-->
+			<div class="mid-container">
+	
+				<!--Contains the user's avatar and description-->
+				<div id="description-bit">
+					<br/><br/>	
+					<h1>
+						Sample User's Page
+						<a href="unfollow_confirmation.html" style="color:white; float:right" title="Unfollow Sample User"><i style="color: #690000" class="fa fa-minus-circle fa-lg"></i></a>
+					</h1>
+					<br/>
+					<hr/>
+			
+					<!--Contains the avatar of the user-->
+					<div id="description-bit-profilebox" >
+						<img src="images/avatars/doggie.jpg" width="300" height="240" title="This is Sample User's avatar"  alt=""/>
+					</div>
+
+					<!--The user's description goes in here-->
+					<div id="description-bit-descbox">
+						<h2>
+							Description
+							<span style="float:right;">
+								<span title="Sample User has made 2 posts in total"><i class="fa fa-file-text-o"></i>&nbsp;2</span>
+								&nbsp;&nbsp;
+								<span title="Sample User has 194 followers"><i class="fa fa-thumbs-up"></i>&nbsp;194</span>
+							</span>
+						</h2>
+						<p style="text-align:justify; text-justify:inter-word;">
+							"Hey. I'm just here to demonstrate what the unfollow confirmation and user pages will look like! Don't unfollow me!"
+						</p>
+						<h6><span style="position:absolute; bottom: 16px; right: 20px">Joined on March 1 2014</span></h6>
+					</div>
+				</div>
+				<br/>	
+				<hr/>
+
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+						<div class="container-nicebox-tight" style="height: 64px; margin-left: 0px;">
+							<h1 style="margin-right: 100px"> 
+									Sample Post 2
+							</h1>
+						</div>
+						<p>Hello! I am a Sample User. I'm here to present some random sample posts for you to read on my page.</p>
+						<p>Here is some information about Pomeranians (a breed of dog).</p>
+						<p>Pomeranians are typically a very friendly, playful and lively breed of dog. They love to be around their owners and are known to be protective of them. Pomeranians are alert and aware of changes in their environment and barking at new stimuli can develop into a habit of barking excessively in any situation. They are somewhat defensive of their territory and will thus bark when they encounter any outside noises. Pomeranians are intelligent dogs, respond well to training, and can be very successful in getting what they want from their owners. They are extroverted and enjoy being the center of attention but can become quite aggressive and dominant if not well trained.</p>
+						<p>This post was taken directly from Wikipedia.</p>
+						<hr/>
+						<h6>
+							Posted on March 1 2014 at 9:00am
+							<span style="float:right;">	
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="Sample Post 2" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/2.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/sample2.html" target="_blank" class="button-fb">
+									<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+
+				<br/><hr/><br/>
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+						<div class="container-nicebox-tight" style="height: 64px; margin-left: 0px;">
+							<h1>
+								Sample Post 1
+							</h1>
+						</div>
+						<p>The Pomeranian (often known as a Pom or Pom Pom) is a breed of dog of the Spitz type, named for the Pomerania region in Central Europe (today part of northern Poland and eastern Germany). Classed as a toy dog breed because of its small size, the Pomeranian is descended from the larger Spitz type dogs, specifically the German Spitz. It has been determined by the Fédération Cynologique Internationale to be part of the German Spitz breed, and in many countries, they are known as the Zwergspitz (Dwarf Spitz).</p>
+
+						<p>The breed has been made popular by a number of royal owners since the 18th century. Queen Victoria owned a particularly small Pomeranian and consequently the smaller variety became universally popular. During Queen Victoria's lifetime alone, the size of the breed decreased by 50%. Overall, the Pomeranian is a sturdy, healthy dog. The most common health issue is Luxating patella. Tracheal collapse can also be an issue. More rarely, the breed can suffer from a skin condition colloquially known as "black skin disease", or alopecia ex. This is a genetic disease which causes the dog's skin to turn black and lose all or most of its hair. The breed is currently among the top 15 most popular in the USA, and the current fashion for small dogs has increased their popularity worldwide.</p>
+						<p>This post was taken directly from Wikipedia.</p>
+						<hr/>
+						<h6>
+							Posted on March 1 2014 at 8:00am
+							<span style="float:right;">	
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="Sample Post 1" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/1.html" data-lang="en" >Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/sample1.html" target="_blank" class="button-fb">
+									<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+				<br/>
+
+
+
+				<!--The footer-->
+				<div id="footer">
+					<hr/>
+					<p style="line-height:160%;">
+						<span style="float:left">
+							<img style="float:left; margin-right: 16px; margin-top: -10px" src="images/logos/bip_footer.png" width="100" alt=""/>
+							Copyright © Michael Stewart 2014. This site is a student project and is not-for-profit.<br style="margin-bottom: 10px"/>
+							<a href="about.html"><i class="fa fa-book fa-lg"></i>&nbsp;&nbsp;About BIP!/References</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="README.txt" target="_blank"><i class="fa fa-info-circle fa-lg"></i>&nbsp;&nbsp;View site readme</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="RSS.xml"><i class="fa fa-rss-square fa-lg"></i>&nbsp;RSS Feed</a>
+						</span>
+						<span style="float:right;">
+							This page was <a href="http://validator.w3.org/check/referer" target="_blank"> successfully validated</a> as HTML5 at W3.org.
+							<a href="http://validator.w3.org/check/referer" target="_blank"><img style="float:right" src="images/icons/HTML5_Logo_128.png" width="64" alt=""/></a><br/>				
+							<a style="float: right; margin-top: 10px" href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+									<img style="border:0;width:88px;height:31px"
+											src="http://jigsaw.w3.org/css-validator/images/vcss"
+											alt="Valid CSS!" />
+							</a>
+							<br/><br/>
+						</span>
+					</p>			
+				</div>	
+			</div>	
+		</div>
+	</body>
+</html>

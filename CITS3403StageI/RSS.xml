@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>BIP!.com</title>
+  <link>http://student.csse.uwa.edu.au/~20947715/home.html</link>
+  <description>Blogging in paradise!</description>
+	<pubDate>Sun, 16 Mar 2014 14:21:00 +0800</pubDate>
+	<lastBuildDate>Sun, 16 Mar 2014 14:21:00 +0800</lastBuildDate>	
+  <item>
+    <title>Sample Post 2</title>
+    <link>http://student.csse.uwa.edu.au/~20947715/posts/sample2.html</link>
+    <guid isPermaLink="true">http://student.csse.uwa.edu.au/~20947715/posts/sample2.html</guid>
+		<pubDate>Sat, 01 Mar 2014 09:00:00 +0800</pubDate>
+		<author>sampleuser@sample.com (Sample User)</author>
+		<description>
+Hello! I am a Sample User. I'm here to present some random sample posts for you to read on my page.
+Here is some information about Pomeranians (a breed of dog).
+Pomeranians are typically a very friendly, playful and lively breed of dog. They love to be around their owners and are known to be protective of them. Pomeranians are alert and aware of changes in their environment and barking at new stimuli can develop into a habit of barking excessively in any situation. They are somewhat defensive of their territory and will thus bark when they encounter any outside noises. Pomeranians are intelligent dogs, respond well to training, and can be very successful in getting what they want from their owners. They are extroverted and enjoy being the center of attention but can become quite aggressive and dominant if not well trained.
+This post was taken directly from Wikipedia.
+		</description>
+  </item>
+  <item>
+    <title>Sample Post 1</title>
+    <link>http://student.csse.uwa.edu.au/~20947715/posts/sample1.html</link>
+    <guid isPermaLink="true">http://student.csse.uwa.edu.au/~20947715/posts/sample1.html</guid>
+		<pubDate>Sat, 01 Mar 2014 08:00:00 +0800</pubDate>
+		<author>sampleuser@sample.com (Sample User)</author>
+    <description>
+The Pomeranian (often known as a Pom or Pom Pom) is a breed of dog of the Spitz type, named for the Pomerania region in Central Europe (today part of northern Poland and eastern Germany). Classed as a toy dog breed because of its small size, the Pomeranian is descended from the larger Spitz type dogs, specifically the German Spitz. It has been determined by the Fédération Cynologique Internationale to be part of the German Spitz breed, and in many countries, they are known as the Zwergspitz (Dwarf Spitz).
+The breed has been made popular by a number of royal owners since the 18th century. Queen Victoria owned a particularly small Pomeranian and consequently the smaller variety became universally popular. During Queen Victoria's lifetime alone, the size of the breed decreased by 50%. Overall, the Pomeranian is a sturdy, healthy dog. The most common health issue is Luxating patella. Tracheal collapse can also be an issue. More rarely, the breed can suffer from a skin condition colloquially known as "black skin disease", or alopecia ex. This is a genetic disease which causes the dog's skin to turn black and lose all or most of its hair. The breed is currently among the top 15 most popular in the USA, and the current fashion for small dogs has increased their popularity worldwide.
+This post was taken directly from Wikipedia
+		</description>
+  </item>
+</channel>
+
+</rss>

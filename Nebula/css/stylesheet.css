@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "fixedsys";
+  src: url("../fonts/FSEX300.ttf") format("truetype");
+}
+
+/* line 8, ../scss/stylesheet.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 12, ../scss/stylesheet.scss */
+body {
+  padding: 0;
+  margin: 0;
+  background: #222;
+  font-family: "fixedsys";
+  background: #050505;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+    /*
+    &.info:before {
+       	background-image: url('../images/backgrounds/nebulas/red_spider_nebula.png'); //concrete_seamless.png');
+		background-size: cover;
+		image-rendering: auto;
+		image-rendering: pixelated;
+		image-rendering: -moz-crisp-edges;
+		-ms-interpolation-mode: nearest-neighbor;
+		opacity: 0.10;
+		filter: alpha(opacity = 10);
+    }*/
+}
+/* line 24, ../scss/stylesheet.scss */
+body.info {
+  background: black;
+  background-image: url("../images/red_spider_nebula_dark.png");
+  background-size: cover;
+  background-size: cover;
+  image-rendering: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  padding-bottom: 60px;
+}
+/* line 35, ../scss/stylesheet.scss */
+body:not(.info):before {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  content: " ";
+  background-image: url("../images/concrete_seamless.png");
+  opacity: 0.08;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  filter: alpha(opacity=8);
+}
+
+/* line 62, ../scss/stylesheet.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  box-sizing: border-box;
+  padding: 1px 15px;
+  color: #ddd;
+  height: 40px;
+}
+/* line 72, ../scss/stylesheet.scss */
+footer p#game-info {
+  float: left;
+}
+/* line 75, ../scss/stylesheet.scss */
+footer p#copyright {
+  float: right;
+}
+/* line 78, ../scss/stylesheet.scss */
+footer p {
+  margin-top: 10px;
+}
+/* line 81, ../scss/stylesheet.scss */
+footer a {
+  color: #ddd;
+}
+/* line 83, ../scss/stylesheet.scss */
+footer a:hover {
+  color: white;
+}
+
+/* line 88, ../scss/stylesheet.scss */
+canvas {
+  z-index: 10;
+}
+
+/* line 92, ../scss/stylesheet.scss */
+canvas#canvas {
+  display: block;
+  margin: 0 auto;
+  background: #000;
+  -ms-transform: scale(4, 4);
+  -webkit-transform: scale(4, 4);
+  transform: scale(4, 4);
+  transform-origin: top;
+  image-rendering: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+@media (max-height: 980px), (max-width: 1280px) {
+  /* line 92, ../scss/stylesheet.scss */
+  canvas#canvas {
+    -ms-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+    transform: scale(2, 2);
+  }
+}
+@media (max-height: 520px), (max-width: 640px) {
+  /* line 92, ../scss/stylesheet.scss */
+  canvas#canvas {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+/* line 116, ../scss/stylesheet.scss */
+canvas#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-height: 980px), (max-width: 1280px) {
+  /* line 116, ../scss/stylesheet.scss */
+  canvas#overlay {
+    width: 640px;
+    height: 480px;
+  }
+}
+@media (max-height: 520px), (max-width: 640px) {
+  /* line 116, ../scss/stylesheet.scss */
+  canvas#overlay {
+    width: 320px;
+    height: 240px;
+  }
+}
+
+/* line 133, ../scss/stylesheet.scss */
+#game-info {
+  color: #ddd;
+  font-weight: normal;
+  line-height: 130%;
+  text-align: justify;
+}
+/* line 138, ../scss/stylesheet.scss */
+#game-info h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+/* line 144, ../scss/stylesheet.scss */
+#game-info hr {
+  border: 0;
+  border-top: 1px solid #777;
+}
+/* line 148, ../scss/stylesheet.scss */
+#game-info h3 {
+  color: white;
+  font-size: 1.3em;
+  margin-top: 2px;
+}
+/* line 153, ../scss/stylesheet.scss */
+#game-info table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  border: 1px solid #777;
+}
+/* line 159, ../scss/stylesheet.scss */
+#game-info table thead tr th {
+  border-bottom: 1px solid #777;
+  color: white;
+}
+/* line 163, ../scss/stylesheet.scss */
+#game-info table th {
+  font-weight: normal;
+}
+/* line 166, ../scss/stylesheet.scss */
+#game-info table th, #game-info table td {
+  padding: 7px 7px;
+}
+/* line 169, ../scss/stylesheet.scss */
+#game-info table thead tr, #game-info table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+/* line 172, ../scss/stylesheet.scss */
+#game-info table td .enemy-image {
+  background-size: cover;
+  image-rendering: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+/* line 180, ../scss/stylesheet.scss */
+#game-info a {
+  color: #ddd;
+}
+/* line 182, ../scss/stylesheet.scss */
+#game-info a:hover {
+  color: white;
+}
+/* line 186, ../scss/stylesheet.scss */
+#game-info ul li {
+  line-height: 160%;
+}
+/* line 189, ../scss/stylesheet.scss */
+#game-info .col {
+  width: 33.33%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  /* line 189, ../scss/stylesheet.scss */
+  #game-info .col {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* line 201, ../scss/stylesheet.scss */
+.container {
+  clear: both;
+  width: 1280px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  min-height: 700px;
+  padding: 20px 40px 40px 40px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+@media (max-width: 1280px) {
+  /* line 201, ../scss/stylesheet.scss */
+  .container {
+    width: 100%;
+  }
+}
+/* line 213, ../scss/stylesheet.scss */
+.container:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

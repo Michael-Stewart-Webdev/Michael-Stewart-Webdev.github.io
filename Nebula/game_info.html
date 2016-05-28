@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+	<head>
+		<title>Nebula!</title>
+		<link href="css/stylesheet.css"  rel="stylesheet" type="text/css">
+		<meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link src="fonts/FSEX300.ttf" rel='stylesheet' />
+	</head>
+	<body class="info">
+		<div style="height: 40px"></div>
+	 	<div class="container">
+		 	<div id="game-info">
+		 		<h2 style="font-weight: normal">Game Information</h2>
+		 		<hr/>
+
+		 		<div class="col">
+		 			<h3 style="font-weight: normal">Aim</h3>
+		 			<p>You are the pilot of a powerful blue spaceship and must navigate through various nebulae.</p>
+		 			<p>Destroy as many aliens along the way as possible to achieve a hiscore. If you chain kills together you'll earn a combo bonus.</p>
+		 			<p>There's only one level so far but I will add more if I have time!</p>
+
+
+			 		<h3 style="font-weight: normal; margin-top: 35px;">Controls</h3>
+			 		<table>
+			 			<thead>
+			 				<tr>
+			 					<th>Key</th>
+			 					<th>Action</th>
+			 				</tr>
+			 			</thead>
+			 			<tbody>
+			 				<tr>
+			 					<td>Arrow keys</td>
+			 					<td>Move</td>
+			 				</tr>
+			 				<tr>
+			 					<td>Space</td>
+			 					<td>Shoot</td>
+			 				</tr>
+			 				<tr>
+			 					<td>Q</td>
+			 					<td>Special weapon</td>
+			 				</tr>
+			 				<tr>
+			 					<td>ESC</td>
+			 					<td>Restart game</td>
+			 				</tr>
+			 			</tbody>
+			 		</table>
+
+			 		<h3 style="font-weight: normal; margin-top: 35px">Difficulty Levels</h3>
+			 		<table>
+			 			<thead>
+			 				<tr>
+			 					<th>Difficulty</th>
+			 					<th>Description</th>
+			 				</tr>
+			 			</thead>
+			 			<tbody>
+			 				<tr>
+			 					<td>Easy</td>
+			 					<td>You take half damage, and less enemies spawn.</td>
+			 				</tr>
+			 				<tr>
+			 					<td>Normal</td>
+			 					<td>You take regular damage. The game is fairly challenging.</td>
+			 				</tr>
+			 				<tr>
+			 					<td>Hard</td>
+			 					<td>You take double damage, everything moves faster, and many more enemies spawn. Intended to be a very hard challenge.</td>
+			 				</tr>
+			 			</tbody>
+			 		</table>
+
+			 	</div>
+			 	<div class="col">
+			 		<h3 style="font-weight: normal">Enemies</h3>
+
+			 		<table>
+			 			<thead>
+			 				<tr>
+			 					<th></th>
+			 					<th>Name</th>
+			 					<th>Info</th>
+			 				</tr>
+			 			</thead>
+			 			<tbody>
+			 				<tr>
+			 					<td><div class="enemy-image" style="width: 32px; height: 32px; background-image: url('images/sprites/enemy_1.png')"></div></td>
+			 					<td>Blob</td>
+			 					<td>A slow-moving, weak enemy.</td>
+			 				</tr>
+			 				<tr>
+			 					<td><div class="enemy-image" style="width: 32px; height: 32px; background-image: url('images/sprites/enemy_2.png')"></div></td>
+			 					<td>UFO</td>
+			 					<td>Flies around randomly on the screen, causing problems if allowed to roam.</td>
+			 				</tr>
+			 				<tr>
+			 					<td><div class="enemy-image" style="width: 32px; height: 32px; background-image: url('images/sprites/enemy_3.png')"></div></td>
+			 					<td>Ghost</td>
+			 					<td>Moves in a swaying motion. Fairly hard to kill.</td>
+			 				</tr>
+			 				<tr>
+			 					<td><div class="enemy-image" style="width: 32px; height: 32px; background-image: url('images/sprites/enemy_4.png')"></div></td>
+			 					<td>Pink Ghost</td>
+			 					<td>Charges at you very quickly when you move directly underneath it.<br/>Awards a lot of points, but is very dangerous.</td>
+			 				</tr>
+			 				<tr>
+			 					<td><div class="enemy-image" style="width: 32px; height: 32px; background-image: url('images/sprites/enemy_6.png')"></div></td>
+			 					<td>Blob Gunner</td>
+			 					<td>Very similar to the regular Blob, but also shoots in a single direction.</td>
+			 				</tr>
+			 				<tr>
+			 					<td><div class="enemy-image" style="width: 32px; height: 32px; background-image: url('images/sprites/enemy_2_gold.png')"></div></td>
+			 					<td>UFO Gunner</td>
+			 					<td>Moves in the same pattern as the regular UFO but also shoots at you.</td>
+			 				</tr>
+			 			</tbody>
+			 		</table>
+
+			 		<h3 style="font-weight: normal; margin-top: 35px">Pickups</h3>
+
+			 		<table>
+			 			<thead>
+			 				<tr>
+			 					<th></th>
+			 					<th>Name</th>
+			 					<th>Info</th>
+			 				</tr>
+			 			</thead>
+			 			<tbody>
+			 				<tr>
+			 					<td><div class="enemy-image" style="width: 32px; height: 32px; background-image: url('images/sprites/pickup_health.png')"></div></td>
+			 					<td>Health</td>
+			 					<td>Restores 20 Health.</td>
+			 				</tr>
+			 				<tr>
+			 					<td><div class="enemy-image" style="width: 32px; height: 32px; background-image: url('images/sprites/powerup_speed.png')"></div></td>
+			 					<td>Quick Reflexes</td>
+			 					<td>Slows time considerably, allowing you to easily take out many enemies.</td>
+			 				</tr>
+			 			</tbody>
+			 		</table>			 		
+			 		
+			 	</div>
+			 	<div class="col">
+			 		<h3 style="font-weight: normal">Resources Used</h3>
+			 		<p>I developed all of the game code (except for some small functions as noted in the code), sprites, and some of the sounds.</p>
+			 		<p>The music, the rest of the sounds, and backgrounds, were obtained from external sources, including:</p>
+			 		<ul>
+			 			<li><a href="http://lf2.net/" target="_blank">LF2</a> (some sounds)</li>
+			 			<li><a href="https://en.wikipedia.org/wiki/List_of_planetary_nebulae" target="_blank">Wikipedia</a> (backgrounds)</li>
+			 			<li><a href="http://www.midiworld.com/files/1018/" target="_blank">MidiWorld</a> (music)</li>
+			 			<li><a href="http://store.steampowered.com/app/2200/" target="_blank">Quake III Arena</a> (player hit sound)</li>
+			 			<li><a href="http://www.fixedsysexcelsior.com/" target="_blank">Fixedsys Excelsior</a> (font)</li>
+			 			<li><a href="http://subtlepatterns.com/" target="_blank">Subtle Patterns</a> (page background)</li>
+			 			<li><a href="http://www.dreamstime.com/royalty-free-stock-photo-clocks-time-background-image14847225" target="_blank">Dreamstime</a> ("Quick Reflexes" background)</li>
+			 		</ul>
+			 		<p>I've had some of the other sounds for a long time (more than 10 years), and no longer remember their source.</p>
+
+			 		<h3 style="font-weight: normal; margin-top: 35px;">Ideal Browser</h3>
+			 		<p>This game runs best on Google Chrome. If you experience occasional slowdowns on Firefox, please try it out on Chrome.</p>
+			 		
+			 		<h3 style="font-weight: normal; margin-top: 35px;">Still to do</h3>
+			 		<p>The highscore system doesn't quite work yet, but will in future.</p>
+
+			 	</div>
+
+
+
+
+		 	</div>
+	 	</div>
+		<footer>
+			<p id="game-info"><a href="game.html">&#8592; Back to game</a></p>
+			<p id="copyright">&copy; Michael Stewart 2016.</p>
+		</footer>
+	</body>
+
+</html>

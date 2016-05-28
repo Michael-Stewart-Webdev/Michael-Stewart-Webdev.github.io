@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--BIP! by Michael Stewart 20947715-->
+		<!--Written for a project for CITS3403 at the University of Western Australia-->
+		<title>BIP! - Unfollow User</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="shortcut icon" href="images/icons/bip_icon_small.ico" >
+		<link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre:700%7CAlef:400,700' rel='stylesheet' type='text/css'>
+		<link href="css/bip_stylesheet.css"  rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+
+	</head>
+	<body>
+
+		<!--The Navigation Bar-->
+		<div id="navbar">
+			<div class="container-navbar">
+				<ul id="nav">
+					<li><a class="bip" href="my_page.html"></a></li>
+					<li><a href="my_page.html">My Page</a></li>
+					<li><a href="online_posts.html">Browse All Posts</a></li>
+					<li><a href="followed_blogs.html">Followed Blogs</a></li>
+					<li style="float:right;"><a href="home.html">Log out</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--The Global Container, to contain everything - the nav box, main content, and RSS Box-->
+		<div id="global-container" onscroll="test(this);">
+	
+			<!--The Navigation Box, on the left of the screen-->
+			<div id="navbox">
+				<h1><a href="my_page.html">MICHAEL STEWART</a></h1>
+				<hr/>
+				<h2><a href="my_page.html" title="View your BIP! page, with all of your posts"><i class="fa fa-home fa-2x"></i>&nbsp;&nbsp;My Page (2 posts)</a></h2>
+				<h2><a href="new_post.html"  title="Write a new post for your page"><i class="fa fa-pencil fa-2x"></i>&nbsp;&nbsp;Write New Post</a></h2>
+				<h2><a href="followers.html" title="View all of your BIP! followers"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Followers (5)</a></h2>
+				<h2><a href="about_me.html"  title="Customise your blog description and avatar"><i class="fa fa-user fa-2x"></i>&nbsp;&nbsp;About Me</a></h2>
+				<br/>
+				<h1><a style="color:#3B9AFF;"  href="online_posts.html">BIP! COMMUNITY</a></h1>
+				<hr/>
+				<h2><a href="online_posts.html" title="Browse through the posts of BIP! users on the web"><i class="fa fa-globe fa-2x"></i>&nbsp;&nbsp;Browse All Posts</a></h2>
+				<h2><a href="followed_blogs.html" title="Browse through the posts of the BIP! blogs you have followed"><i class="fa fa-heart fa-2x"></i>&nbsp;&nbsp;Followed Blogs</a></h2>
+				<h2><a style="color:#3B9AFF;" href="manage_followed.html"  title="Manage which blogs you follow"><i class="fa fa-group fa-2x" style="color:#3B9AFF;"></i>&nbsp;&nbsp;Manage Followed (4)</a></h2>
+				<br/>
+				<h1><a href="about.html">MISCELLANEOUS</a></h1>
+				<hr/>
+				<h2><a href="about.html" title="Read stuff written by the creator of BIP!"><i class="fa fa-book fa-2x"></i>&nbsp;&nbsp;About BIP!/References</a></h2>
+				<h2><a href="RSS.xml" title="View the RSS feed of BIP!.com" target="_blank" ><i class="fa fa-rss-square fa-2x"></i>&nbsp;&nbsp;RSS Feed</a></h2>
+				<h2><a href="README.txt" title="View the readme of this site" target="_blank" ><i class="fa fa-info-circle fa-2x"></i>&nbsp;&nbsp;View Readme</a></h2>
+			</div>		
+
+
+			<!--The container for the main content-->
+			<div class="mid-container">
+				<br/><br/>	
+				<h1>
+					Unfollow Sample User
+					<a href="manage_followed.html" style="background-color: #690000; color:white; float:right" class="button-basic"><i class="fa fa-minus-circle fa-lg"></i>&nbsp;&nbsp;Unfollow</a>
+				</h1>
+				<hr/>
+				<h2>Are you sure you want to unfollow Sample User?</h2>
+				<h5>You will no longer receive updates from Sample User in your Followed Blogs page.</h5>
+
+				<!--A nice box for a followed user's details to go in-->
+				<div class="nice-box-follower">
+
+					<!--A container to keep the text tidy-->
+					<div class="container-nicebox-tight">
+
+						<!--A small div to contain the avatar picture, and a vignette (inset box shadow) overlay-->
+						<div class="avatar-box">
+							<a href="sample_user_page.html"><img src="images/avatars/doggie.jpg" title="Visit Sample User's page" alt=""/></a>
+						</div>
+						<h1>
+							<a href="sample_user_page.html">Sample User</a>
+							<span style="float:right; vertical-align: middle; font-size: large;">
+								<span title="Sample User has made 2 posts in total"><i class="fa fa-file-text-o"></i>&nbsp;2</span>
+								&nbsp;&nbsp;
+								<span title="Sample User has 194 followers"><i class="fa fa-thumbs-up"></i>&nbsp;194</span>
+							</span>
+						</h1>
+						<p style="text-align:justify; text-justify:inter-word;">"Hey. I'm just here to demonstrate what the unfollow confirmation and user pages will look like! Don't unfollow me!"</p>
+						<div style="position:absolute; bottom: -10px; left: 215px; width: 75%;">
+							<hr/>
+							<h6>
+								You followed Sample User on March 11 2014 at 11:11am
+							</h6>
+						</div>
+					</div>
+				</div>
+
+				<br/>
+
+				<!--The footer-->
+				<div id="footer">
+					<hr/>
+					<p style="line-height:160%;">
+						<span style="float:left">
+							<img style="float:left; margin-right: 16px; margin-top: -10px" src="images/logos/bip_footer.png" width="100" alt=""/>
+							Copyright © Michael Stewart 2014. This site is a student project and is not-for-profit.<br style="margin-bottom: 10px"/>
+							<a href="about.html"><i class="fa fa-book fa-lg"></i>&nbsp;&nbsp;About BIP!/References</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="README.txt" target="_blank"><i class="fa fa-info-circle fa-lg"></i>&nbsp;&nbsp;View site readme</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="RSS.xml"><i class="fa fa-rss-square fa-lg"></i>&nbsp;RSS Feed</a>
+						</span>
+						<span style="float:right;">
+							This page was <a href="http://validator.w3.org/check/referer" target="_blank"> successfully validated</a> as HTML5 at W3.org.
+							<a href="http://validator.w3.org/check/referer" target="_blank"><img style="float:right" src="images/icons/HTML5_Logo_128.png" width="64" alt=""/></a><br/>				
+							<a style="float: right; margin-top: 10px" href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+									<img style="border:0;width:88px;height:31px"
+											src="http://jigsaw.w3.org/css-validator/images/vcss"
+											alt="Valid CSS!" />
+							</a>
+							<br/><br/>
+						</span>
+					</p>			
+				</div>				
+			</div>
+		</div>
+	</body>
+</html>

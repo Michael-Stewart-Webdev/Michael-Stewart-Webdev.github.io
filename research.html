@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test</title>
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->				
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-left">
+					<a href="index.html">
+						<div class="navbar-logo">
+							<img src="images/icon.png" alt="Me."/>
+							<h2>Michael Stewart</h2>
+						</div>
+					</a>					
+				</div>
+				<div class="navbar-right">
+					<ul class="nav">
+						<li><a href="index.html#about-me">About Me</a></li>
+						<li><a href="index.html#portfolio">Portfolio</a></li>
+						<li><a href="index.html#contact-me">Contact Me</a></li>
+						<li><a href="#research">My Research</a></li>
+					</ul>				
+				</div>
+			</div>
+		</nav>
+		<main>
+			<!--
+			<div class="splash">
+				
+				<div class="container">
+					<h1>Michael Stewart</h1>
+					<h2>Web developer</h2>
+				</div>
+			
+			
+			</div>
+			-->
+			<header class="title-tiny blue-border-bottom" id="research">
+				<div class="container">
+					<h1 data-title="Research">My Research</h1>	
+									
+				</div>
+			</header>	
+
+			<section>
+				<div class="container">
+		
+					<div class="about-me">
+						<h3>PhD Research</h3>
+						<p>I began my PhD at The University of Western Australia in March 2016. My supervisors are Dr Wei Liu and Assoc/Prof Rachel Cardell-Oliver.</p>
+						<p>My research focuses on Natural Language Processing, specifically Entity Recognition.</p>
+						<p>My current aim is to investigate ways to automate the process of classifying text-based data. I am working on a system that processes workplace accident data from the Department of Mines and Petroleum, with the ultimate goal of classifying the conditions an accident occured in based on the description of the accident. Take the following accident, for example:</p>
+						<blockquote>Injured Person tripped over a cable and broke his left shoulder.</blockquote>
+						<p>My system, once completed, will recognise that the injured body part was the left shoulder, and that the cause of accident was tripping over an object.</p>
+						<p>Once it processes a large dataset, it may also conclude that workers at a particular company are more likely to have tripping-related accidents. This is an example of a meaningful conclusion drawn completely automatically and without human input.</p>
+						<p>The motivation for this project is driven by the removal of the huge amount of work required for humans to process large amounts of data and classify records manually. In the long run, a system that automatically performs these tasks would save incredible amounts of time and would allow humans to focus on other tasks.</p>
+
+						<h3 style="margin-top: 40px">Honours Research</h3>
+						<p>During my honours year in 2015 I studied heterogeneous spatio-temporal databases. The following was my dissertation abstract:</p>
+						<blockquote>Techniques for visualising and analysing spatio-temporal data are currently in demand. This demand is rising with the increase of large geo-spatial datasets, sensor data, and trackable moving objects. One common solution for analysing spatiotemporal
+data is to import it into a NoSQL database that supports spatial and temporal queries, such as OrientDB. However, in some cases, the structure of the dataset does not enable these types of queries to be performed. We introduce a generic model for representing spatio-temporal data within a NoSQL graph database, as well as a pre-processing framework that may be used to adapt heterogeneous data to our model. After pre-processing has taken place the data may be imported into OrientDB, enabling a wide range of spatio-temporal queries that were not possible prior to pre-processing.<br/>
+The performance of OrientDB scales linearly with the size of the search space, and each query we tested completes in under a minute on a modern desktop computer. However, some large-scale queries that return hundreds of thousands of records cause OrientDB to run out of memory. The footprint of OrientDB appears to be suboptimal when handling document-based data, as it doubles the size of the JSON data it contains. Also, a number of software errors within OrientDB hamper developer productivity.<br/>
+We identify ten queries that would be possible prior to pre-processing. These include spatial, temporal, spatio-temporal, and sensor reading value queries. The pre-processing framework is capable of clustering data in order to increase performance, and has the potential to greatly speed up queries.</blockquote>
+					</div><!--
+					--><div class="papers">
+						<h3>Research papers</h3>
+						<ul>
+							<!--<li><a href="docs/Dissertation - Michael Stewart.pdf" target="_blank"><div><img src="images/pdf-icon.png" alt="pdf-icon"></img></div><span>Honours Dissertation</span></a></li>-->
+							<li><a href="docs/Literature Review - Michael Stewart.pdf" target="_blank"><div><img src="images/pdf-icon.png" alt="pdf-icon"></img></div><span>Honours Literature Review</span></a></li>
+							<li><a href="docs/Cloud Computing - Michael Stewart.pdf" target="_blank"><div><img src="images/pdf-icon.png" alt="pdf-icon"></img></div><span>Cloud Computing - a Review</span></a></li>
+							<li><a href="docs/Boids - Michael Stewart.pdf" target="_blank"><div><img src="images/pdf-icon.png" alt="pdf-icon"></img></div><span>Boids - a Case Study</span></a></li>
+							<li><a href="docs/Experimental Paper - Michael Stewart.pdf" target="_blank"><div><img src="images/pdf-icon.png" alt="pdf-icon"></img></div><span>Analysing the Performance of Nearest
+Neighbour and Window Queries on R-Trees</span></a></li>						
+						</ul>
+						<h3>Posters</h3>
+						<a href="docs/Honours Poster - Michael Stewart.pdf" target="_blank"><img src="images/honours_poster.jpg" alt="Honours poster"></img></a>
+						<h3>Block Diagrams</h3>
+						<a href="docs/Preprocessing Framework - Michael Stewart.pdf" target="_blank"><img src="images/preprocessing-framework.jpg" alt="Preprocessing framework"></img></a>		
+					
+					</div>
+
+				</div>
+			</section>
+
+		
+		<footer>
+			<section class="black-background">
+				<div class="container">
+					<p>&copy; Michael Stewart 2016.<span class="footer-right">You can view this site's source code <a href="https://github.com/Michael-Stewart-Webdev/Michael-Stewart-Webdev.github.io">here</a>.</span></p>
+				</div>
+			</section>
+		</footer>
+
+		<script src="javascript/js.js"></script>
+
+	</body>
+</html>

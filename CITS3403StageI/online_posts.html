@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--BIP! by Michael Stewart 20947715-->
+		<!--Written for a project for CITS3403 at the University of Western Australia-->
+		<title>BIP! - Browse All Posts</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="shortcut icon" href="images/icons/bip_icon_small.ico" >
+		<link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre:700%7CAlef:400,700' rel='stylesheet' type='text/css'>
+		<link href="css/bip_stylesheet.css"  rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+		<script type="text/javascript" src="javascript/bip_js.js"></script>
+	</head>
+	<body>
+
+		<!--The Navigation Bar-->
+		<div id="navbar">
+			<div class="container-navbar">
+				<ul id="nav">
+					<li><a class="bip" href="my_page.html"></a></li>
+					<li><a href="my_page.html">My Page</a></li>
+					<li><a href="online_posts.html">Browse All Posts</a></li>
+					<li><a href="followed_blogs.html">Followed Blogs</a></li>
+					<li style="float:right;"><a href="home.html">Log out</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--The Global Container, to contain everything - the nav box, main content, and RSS Box-->
+		<div id="global-container">
+	
+			<!--The Navigation Box, on the left of the screen-->
+			<div id="navbox">
+				<h1><a href="my_page.html">MICHAEL STEWART</a></h1>
+				<hr/>
+				<h2><a href="my_page.html" title="View your BIP! page, with all of your posts"><i class="fa fa-home fa-2x"></i>&nbsp;&nbsp;My Page (2 posts)</a></h2>
+				<h2><a href="new_post.html"  title="Write a new post for your page"><i class="fa fa-pencil fa-2x"></i>&nbsp;&nbsp;Write New Post</a></h2>
+				<h2><a href="followers.html" title="View all of your BIP! followers"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Followers (5)</a></h2>
+				<h2><a href="about_me.html"  title="Customise your blog description and avatar"><i class="fa fa-user fa-2x"></i>&nbsp;&nbsp;About Me</a></h2>
+				<br/>
+				<h1><a style="color: #3B9AFF;" href="online_posts.html">BIP! COMMUNITY</a></h1>
+				<hr/>
+				<h2><a style="color: #3B9AFF;" href="online_posts.html" title="Browse through the posts of BIP! users on the web"><i class="fa fa-globe fa-2x" style="color: #3B9AFF;"></i>&nbsp;&nbsp;Browse All Posts</a></h2>
+				<h2><a href="followed_blogs.html" title="Browse through the posts of the BIP! blogs you have followed"><i class="fa fa-heart fa-2x"></i>&nbsp;&nbsp;Followed Blogs</a></h2>
+				<h2><a href="manage_followed.html"  title="Manage which blogs you follow"><i class="fa fa-group fa-2x"></i>&nbsp;&nbsp;Manage Followed (4)</a></h2>
+				<br/>
+				<h1><a href="about.html">MISCELLANEOUS</a></h1>
+				<hr/>
+				<h2><a href="about.html" title="Read stuff written by the creator of BIP!"><i class="fa fa-book fa-2x"></i>&nbsp;&nbsp;About BIP!/References</a></h2>
+				<h2><a href="RSS.xml" title="View the RSS feed of BIP!.com" target="_blank" ><i class="fa fa-rss-square fa-2x"></i>&nbsp;&nbsp;RSS Feed</a></h2>
+				<h2><a href="README.txt" title="View the readme of this site" target="_blank" ><i class="fa fa-info-circle fa-2x"></i>&nbsp;&nbsp;View Readme</a></h2>
+			</div>		
+
+
+			<!--The container for the main content-->
+			<div class="mid-container">
+				<br/><br/>
+				<h1>Posts from everyone on BIP!</h1>
+				<hr/>
+				<p>If you just want to see posts from blogs you've followed, go to <a style="text-decoration:none; color: #363636" href="followed_blogs.html">Followed blogs</a> instead.</p>	
+				<br/>
+				
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+
+						<!--The box containing the author, their profile picture, and the follow button-->
+						<div class="post-author-box">
+							<h1 title="Visit Mr Boring's page">
+								<a href="sample_user_page.html"><img src="images/avatars/cat.jpg" width="100" height="75" alt=""/>
+								Mr Boring</a>
+								<span style="float:right"><a href="online_posts.html"><i class="fa fa-plus-circle fa-lg" style="color: #036900" title="Follow this user"></i></a></span>		
+							</h1>
+							<h2>0 followers</h2>
+						</div>
+						<hr/>
+						<h4>The Most Boring Thing Ever Written</h4>
+						<p>I am writing something. Yes, I plan to make it the most boring thing ever written. I go to the store. A car is parked. Many cars are parked or moving. Some are blue. Some are tan. They have windows. In the store, there are items for sale. These include such things as soap, detergent, magazines, and lettuce. You can enhance your life with these products. Soap can be used for bathing, be it in a bathtub or in a shower. Apply the soap to your body and rinse. Detergent is used to wash clothes. Place your dirty clothes into a washing machine and add some detergent as directed on the box. Select the appropriate settings on your washing machine and you should be ready to begin. Magazines are stapled reading material made with glossy paper, and they cover a wide variety of topics, ranging from news and politics to business and stock market information. Some magazines are concerned with more recreational topics, like sports card collecting or different kinds of hairstyles. Lettuce is a vegetable. It is usually green and leafy, and is the main ingredient of salads. You may have an appliance at home that can quickly shred lettuce for use in salads. Lettuce is also used as an optional item for hamburgers and deli sandwiches. Some people even eat lettuce by itself. I have not done this. So you can purchase many types of things at stores.</p>
+						<p>If I drive around, I sometimes notice the houses and buildings all around. There are also pieces of farm land that are very large. Houses can be built from different kinds of materials. The most common types are brick, wood, and vinyl or synthetic siding. Houses have lawns that need to be tended. Lawns need to be mowed regularly. Most people use riding lawnmowers to do this. You can also use a push mower. These come in two varieties: gas-powered and manual. You don’t see manual push-mowers very much anymore, but they are a good option if you do not want to pollute the air with smoke from a gas-powered lawnmower. I notice that many families designate the lawnmowing responsibility to a teenager in the household. Many of these teenagers are provided with an allowance for mowing the yard, as well as performing other chores, like taking out the trash, washing the dishes, making their bed, and keeping the house organized. Allowances are small amounts of money given by parents to their children, usually on a weekly basis. These usually range from 5 dollars to 15 dollars, sometimes even 20 dollars. Many parents feel that teenagers can learn financial responsibility with this system.</p>
+						<p>Now I will talk about farm land. Farm land can be identified by some common features. They almost always consist of a very large patch of dirt with small green plants lined up in very long rows. You may sometimes see farm equipment riding over these rows, like tractors or combines. These machines help farmers grow more crops in less time. They are a very helpful invention. Some different types of crops are soybeans, cotton, corn, tomatoes, tobacco, and lettuce (which I mentioned earlier). Most crops are used as food, and can be defined as either fruits or vegetables. Some are commonly eaten raw, after being rinsed in water to remove any dirt. Some are often cooked, which helps give them a more pleasant taste and makes them easier to chew. A very versatile vegetable is the potato. It can be eaten raw, or it can be cooked in a variety of ways. They can be baked, and many people like to add butter to them. They can be mashed, and a lot of times brown gravy or milk gravy is poured on top of them. They can be cut into thin strips and fried. Typically a large amount of grease is required to prepare potatoes in this style, but they are easy to make and easy to eat. You can order them at several fast-food restaurants. Potatoes can also be boiled, stewed, and scalloped. There is a wide variety of options available to you when cooking potatoes.</p>
+						<p>Some other types of crops grown on farm land are used for other purposes. Cotton is used to make clothing (which I also mentioned earlier). It is a very versatile and inexpensive material for clothes. Such items as shirts, pants, socks, and underwear can be made from cotton. The process of converting cotton from a cotton plant to clothing is fairly complicated. Today, cotton is harvested more efficiently through the use of the cotton gin, invented by Eli Whitney many years ago.</p>
+						<p>Tobacco is another type of crop. It is used in making cigarettes. A lot of people smoke cigarettes, even though many medical sources have identified them as harmful to people’s health. Warnings are printed on cigarette packages reminding people of possible dangers resulting from smoking. Cigarettes are available in several brands, including Marlboro, Salem, and Virginia Slims. There is a brand called Kool, but I don’t know whether they are still available at most outlets. Tobacco farming is a large industry, and currently there is debate about it. Recently the government decided on some regulations that cost tobacco companies a large amount of money.</p>
+						<p>If you notice, some farm lands have animals living on them. Most of these are cows, and there are also pigs, sheep, and goats living on farms. Some are raised for the milk they provide. This milk goes through several processes to ensure that it is not contaminated before it is made available to consumers at stores (which I mentioned earlier). Another use for farm animals is meat. Three popular types of meat are beef, pork, and chicken. Beef comes from cows. Pork comes from pigs. Chicken comes from chickens, but you probably knew that. These animals are raised to become plump and healthy, then they are killed, sometimes at slaughter houses. The meat is then removed from their bodies, cleaned, and made available at a variety of stores and restaurants. Sometimes this process can seem gross, but it is part of an advanced ecological food chain on earth. Just like birds eat worms and tigers eat deer, human beings eat cows and pigs. The main difference is that we don’t eat animals raw. We cook the meat to remove blood, fat, and germs from it. We also season our meat with salt or different kinds of sauces. The end result is food that is very tasty and is healthy for us.</p>
+						<p>Farmers do not like trespassers. If a farmer sees one, he will sometimes shoot at them with a shotgun that he owns. Trespassing is against the law. Laws are created by government to prevent people from living in fear. They are meant to provide safety for citizens. Our government in America consists of a legislative branch, an executive branch, and a judicial branch. The legislative branch makes laws based on the concerns of citizens they represent. The executive branch consists of the President. This person enforces the law, and he has certain other duties like declaring war and approving bills prepared by members of the legislative branch. The President is also considered the leader of our country. The judicial branch interprets the laws. This branch consists of the courts and the trials held in them. Here a judge and jury determine from evidence presented by lawyers whether someone is guilty of breaking a law. Initial law enforcement takes place among police officers. They are the first people to encounter situations where a law is being broken. If a criminal (law-breaker) becomes too violent or hostile, they will use guns or mace or nightsticks to administer immediate punishment. Their goal is to bring the criminal under control, so that he can receive a punishment determined by members of the judicial branch of government. Punishments mostly include time in jail, but they can also include fines and, in extreme cases, the death penalty. There is controversy surrounding the death penalty.</p>
+						<p>Found at Bradezone.com (see references).</p>
+						<hr/>
+						<h6>
+							Posted on March 10 2014 at 5:25pm
+							<span style="float:right;">
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="The Most Boring Thing Ever Written" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/8.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/8.html" target="_blank" class="button-fb">
+									<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+				<br/><hr/><br/>
+
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+
+						<!--The box containing the author, their profile picture, and the follow button-->
+						<div class="post-author-box">
+							<h1 title="Visit CactusLover44's page">
+								<a href="sample_user_page.html"><img src="images/avatars/cactus.jpg" width="100" height="75" alt=""/>
+								CactusLover44</a>
+								<span style="float:right"><a href="unfollow_confirmation.html"><i style="color: #690000" class="fa fa-minus-circle fa-lg" title="Unfollow this user"></i></a></span>		
+							</h1>
+							<h2>18 followers</h2>
+						</div>
+						<hr/>
+						<h4>There are so many amazing cactii on this planet</h4>
+						<p>Oh my gosh.</p>
+						<p>LOOK. LOOK AT THIS CACTUS.</p>
+						<img src="images/post_attachments/nice_cactus.jpg" style="border-radius:5px" alt=""/>
+						<p>Is this not the best cactus you have ever seen? Lush, green mounds of spikey bliss lay ever-so-peacefully inside a delicate and eloquent pot.</p>
+						<hr/>
+						<h6>
+							Posted on March 10 2014 at 3:43pm
+							<span style="float:right;">
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="There are so many amazing cactii on this planet" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/7.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/7.html" target="_blank" class="button-fb">
+								<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+							</a>
+						</span>
+						</h6>
+					</div>
+				</div>
+				<br/><hr/><br/>
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+
+						<!--The box containing the author, their profile picture, and the follow button-->
+						<div class="post-author-box">
+							<h1 title="Visit PikaPika2005's page">
+								<a href="sample_user_page.html"><img src="images/avatars/pikachu.jpg" width="100" height="75" alt=""/>
+								PikaPika2005</a>
+								<span style="float:right"><a href="unfollow_confirmation.html"><i style="color: #690000" class="fa fa-minus-circle fa-lg" title="Unfollow this user"></i></a></span>		
+							</h1>
+							<h2>2 followers</h2>
+						</div>
+						<hr/>
+						<h4>I love Pikachu!!</h4>
+						<p>Omg like Pikachu is so cute. I totally wish I was a Pikachu. Wow.</p>
+						<p>That's all. kthxbai</p>
+						<hr/>
+						<h6>
+							Posted on March 10 2014 at 3:38pm
+							<span style="float:right;">
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="I love Pikachu!!" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/6.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/6.html" target="_blank" class="button-fb">
+		 							<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+				<br/><hr/><br/>
+
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+
+						<!--The box containing the author, their profile picture, and the follow button-->
+						<div class="post-author-box">
+							<h1 title="Visit RustySpoon301's page">
+								<a href="sample_user_page.html"><img src="images/avatars/salad.jpg" width="100" height="75" alt=""/>
+								RustySpoon301</a>
+								<span style="float:right"><a href="unfollow_confirmation.html"><i style="color: #690000" class="fa fa-minus-circle fa-lg" title="Unfollow this user"></i></a></span>		
+							</h1>
+							<h2>3 followers</h2>
+						</div>
+						<hr/>
+						<h4>A Post About Me</h4>
+						<p>The main character; a peculiar green man with a hunch on his back. He is single, and an extremely odd person. His long, green fingers are sensitive to rough surfaces. Salad Fingers will stimulate himself by rubbing his fingers on such objects as rusty nails, rusty tea kettles, metal jail-cell bars and nettles, which he uses for self-urtication. Salad Fingers is often heedless to the mortality of creatures / things and appears unable to tell whether something is alive or not. Salad Fingers lives alone in a small house / shack with the number 22 on the door and a working oven. He also has some ability in playing the flute and speaking French.</p>
+						<p>Salad Fingers has a strange habit of providing narration for other characters rather than engaging in actual conversation, even if the characters are living beings capable of speech. The names he attributes to different "characters" often appear to be thought up on the spot or simply applied to non-existent characters. For example: Salad Fingers looks puzzled in episode five when he holds up the Hubert Cumberdale finger-puppet and appears to think up the name Barbara Logan-Price spontaneously to call him instead.</p>
+						<p>This post was taken from Internetopia.com (see reference page).</p>
+						<hr/>
+						<h6>
+							Posted on March 10 2014 at 3:33pm
+							<span style="float:right;">
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="A Post About Me" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/5.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/5.html" target="_blank" class="button-fb">
+  								<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+				<br/><hr/><br/>
+
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+
+						<!--The box containing the author, their profile picture, and the follow button-->
+						<div class="post-author-box">
+							<h1 title="Visit David Beardie's page">
+								<a href="sample_user_page.html"><img src="images/avatars/bowie.jpg" width="100" height="75" alt=""/>
+								David Beardie</a>
+								<span style="float:right"><a href="unfollow_confirmation.html"><i style="color: #690000" class="fa fa-minus-circle fa-lg" title="Unfollow this user"></i></a></span>
+							</h1>
+							<h2>9 followers</h2>
+						</div>
+						<hr/>
+						<h4>Shave Oddity</h4>
+						<p>Shave control to major Tom</p>
+						<p>Shave control to major Tom</p>
+						<p>Take your razer blade and switch the power on</p>
+						<p>(Ten) Shave control (Nine) to major Tom (Eight)</p>
+						<p>(Seven, six) Commencing shaving (Five), razer on (Four)</p>
+						<p>(Three, two) Check the mirror (One) and may gods (Blastoff) love be with you</p>
+						<br/>
+						<p>This is shave control to major Tom, you've really made the grade</p>
+						<p>And the papers want to know whose aftershave you wear</p>
+						<p>Now it's time to leave the bathroom if you dare</p>
+						<br/>
+						<p>This is major Tom to shave control, I'm stepping through the door</p>
+						<p>And I'm floating in a most peculiar way</p>
+						<p>And my face looks very different today</p>
+						<p>Here am I sitting in the kitchen far from the bathroom</p>
+						<p>My face is very smooth and there's nothing I can do</p>
+						<br/>
+						<p>Though I've shaved one hundred thousand hairs, I'm feeling very ill</p>
+						<p>And I think my razer knows which way to go</p>
+						<p>Tell my wife I love her very much, she knows</p>
+						<p>Shave control to major Tom, your razer's dead, there's something wrong</p>
+						<p>Can you hear me, major Tom?</p>
+						<p>Can you hear me, major Tom?</p>
+						<p>Can you hear me, major Tom?</p>
+						<p>Can you...</p>
+						<p>Here am I sitting in my kitchen far from the bathroom</p>
+						<p>My face is very smooth and there's nothing I can do</p>
+						<hr/>
+						<h6>
+							Posted on March 9 2014 at 2:11pm
+							<span style="float:right;">
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="Shave Oddity" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/4.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/4.html" target="_blank" class="button-fb">
+									<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+				<br/><hr/><br/>
+
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+
+						<!--The box containing the author, their profile picture, and the follow button-->
+						<div class="post-author-box">
+							<h1 title="Visit PikaPika2005's page">
+								<a href="sample_user_page.html"><img src="images/avatars/pikachu.jpg" width="100" height="75" alt=""/>
+								PikaPika2005</a>
+								<span style="float:right"><a href="unfollow_confirmation.html"><i style="color: #690000" class="fa fa-minus-circle fa-lg" title="Unfollow this user"></i></a></span>
+							</h1>
+							<h2>2 followers</h2>
+						</div>
+						<hr/>
+						<h4>Pikachu is the best!</h4>
+						<p>Yay Pikachu! You are so good. BZZZZZZZZZZT.</p>
+						<p>That's all. kthxbai</p>
+						<hr/>
+						<h6>
+							Posted on March 9 2014 at 1:51pm
+							<span style="float:right;">
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="Pikachu is the best!" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/3.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/3.html" target="_blank" class="button-fb">
+									<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+				<br/><hr/><br/>
+
+				<!--A post by someone, in the appropriately-titled 'nice box'-->
+				<div class="nice-box">
+
+					<!--Container to make the text look alright inside the box-->
+					<div class="container-nicebox">
+
+						<!--The box containing the author, their profile picture, and the follow button-->
+						<div class="post-author-box">
+							<h1 title="Visit David Beardie's page">
+								<a href="sample_user_page.html"><img src="images/avatars/bowie.jpg" width="100" height="75" alt=""/>
+								David Beardie</a>
+								<span style="float:right"><a href="unfollow_confirmation.html"><i style="color: #690000" class="fa fa-minus-circle fa-lg" title="Unfollow this user"></i></a></span>
+							</h1>
+							<h2>9 followers</h2>
+						</div>
+						<hr/>
+						<h4>The Man Who Shaved the World</h4>
+						<p>We passed upon the stair, we spoke of was and when</p>
+						<p>Although I wasn't there, he said I was his friend</p>
+						<p>Which came as some surprise I spoke into his eyes</p>
+						<p>I thought you shaved alone, a long long time ago</p>
+						<br/>
+						<p>Oh no, not me</p>
+						<p>I never lost control</p>
+						<p>You're face to face</p>
+						<p>With the man who shaved the world</p>
+						<br/>
+						<p>I laughed and shook his hand, and made my way back home</p>
+						<p>I searched for form and land, for years and years I roamed</p>
+						<p></p>
+						<p>I gazed a gazely stare at all the millions here</p>
+						<p>We must have shaved alone, a long long time ago</p>
+						<br/>
+						<p>Who knows? not me</p>
+						<p>We never lost control</p>
+						<p>You're face to face</p>
+						<p>With the man who shaved the world</p>
+						<hr/>
+						<h6>
+							Posted on March 9 2014 at 12:02pm
+							<span style="float:right;">
+								<a href="https://twitter.com/share" class="twitter-share-button"  data-text="Shave Oddity" data-size="large" data-url="student.csse.uwa.edu.au/~20947715/posts/0.html" data-lang="en">Tweet</a>
+								<a style="float:right; color: #ffffff" href="https://www.facebook.com/sharer/sharer.php?u=student.csse.uwa.edu.au/~20947715/posts/0.html" target="_blank" class="button-fb">
+									<img style="vertical-align:middle; border-radius: 3px;" src="images/icons/glyphicons_social_30_facebook.png"  alt=""/>&nbsp;&nbsp;Share
+								</a>
+							</span>
+						</h6>
+					</div>
+				</div>
+
+
+				<br/>		
+	
+				<!--The footer -->
+				<div id="footer">
+					<hr/>
+					<p style="line-height:160%;">
+						<span style="float:left">
+							<img style="float:left; margin-right: 16px; margin-top: -10px" src="images/logos/bip_footer.png" width="100" alt=""/>
+							Copyright © Michael Stewart 2014. This site is a student project and is not-for-profit.<br style="margin-bottom: 10px"/>
+							<a href="about.html"><i class="fa fa-book fa-lg"></i>&nbsp;&nbsp;About BIP!/References</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="README.txt" target="_blank"><i class="fa fa-info-circle fa-lg"></i>&nbsp;&nbsp;View site readme</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="RSS.xml"><i class="fa fa-rss-square fa-lg"></i>&nbsp;RSS Feed</a>
+						</span>
+						<span style="float:right;">
+							This page was <a href="http://validator.w3.org/check/referer" target="_blank"> successfully validated</a> as HTML5 at W3.org.
+							<a href="http://validator.w3.org/check/referer" target="_blank"><img style="float:right" src="images/icons/HTML5_Logo_128.png" width="64" alt=""/></a><br/>				
+							<a style="float: right; margin-top: 10px" href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+									<img style="border:0;width:88px;height:31px"
+											src="http://jigsaw.w3.org/css-validator/images/vcss"
+											alt="Valid CSS!" />
+							</a>
+							<br/><br/>
+						</span>
+					</p>			
+				</div>								
+			</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,57 @@
+/* Bip_stylesheet_home.css by Michael Stewart 20947715 */
+
+
+/* Basic document parts */
+
+body {
+	background-color: #3B9AFF;
+	background-image: url("../images/backgrounds/clouds.jpg");
+	background-repeat:no-repeat;
+}
+
+/* Containers */
+
+#home-container {
+	width: 926px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	height: 85vh;
+	min-height: 600px;
+}
+
+/* Footer */
+
+#footer-home {
+	width: 1210px;
+	height:76px;
+	height: 76px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer-home p {
+	font-size: small;
+	color:#FFFFFF;
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#footer-home a {
+	font-size: small;
+	text-decoration:none; 
+	color:#FFFFFF;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#footer-home a:hover {
+	color: #FF9000;
+}
