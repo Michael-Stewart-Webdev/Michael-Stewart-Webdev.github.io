@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wordy!</title>
+		<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+		<meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->		
+
+		<style>
+			#wordy-table {
+				font-size: 14px;
+				line-height: 150%;
+				font-family: "Courier New";
+				border-collapse: collapse;
+
+			}
+			#wordy-section {
+				overflow-x: scroll;
+				height: 75vh;
+				overflow-y: scroll;
+				padding: 10px 10px 10px 10px;
+			}
+			#wordy-table td {
+				min-width: 120px;
+				padding: 0 10px;
+				box-sizing: border-box;
+			}
+			#wordy-table td.nine {
+				font-weight: bold;
+			}
+			#wordy-table tr:nth-child(even) {
+				background: #f3f3f3;
+			}
+			#wordy-table td:first-child {
+				border-right: 2px solid #555;
+				text-align: center;
+			}
+
+
+		</style>
+
+
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-left">
+					<a href="index.html">
+						<div class="navbar-logo">
+							<img src="../images/icon.png" alt="Me."/>
+							<h2>Michael Stewart</h2>
+						</div>
+					</a>					
+				</div>
+				<div class="navbar-right">
+					<ul class="nav">
+						<li><a href="../index.html#about-me">About Me</a></li>
+						<li><a href="../index.html#portfolio">Portfolio</a></li>
+						<li><a href="../index.html#contact-me">Contact Me</a></li>
+						<li><a href="../research.html">My Research</a></li>
+
+					</ul>				
+				</div>
+			</div>
+		</nav>
+		<main>
+	
+			<header class="title-tiny shadow-bottom" id="portfolio">
+				<div class="container">
+					<h1 data-title="Portfolio">INTERESTING LETTER COMBINATIONS</h1>					
+				</div>
+			</header>	
+
+			<section id="wordy-section">
+
+				<table id="wordy-table">
+
+					<tbody>
+
+
+
+					</tbody>
+
+
+				</table>
+
+
+
+			</section>
+
+
+
+		</main>
+		
+		
+		
+		
+		<footer>
+			<section class="black-background">
+				<div class="container">
+					<p>&copy; Michael Stewart 2016.<span class="footer-right">You can view this site's source code <a href="https://github.com/Michael-Stewart-Webdev/Michael-Stewart-Webdev.github.io">here</a>.</span></p>
+				</div>
+			</section>
+		</footer>
+
+		<script src="word_data.js"></script>
+		<script
+		  src="https://code.jquery.com/jquery-1.12.4.js"
+		  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+		  crossorigin="anonymous"></script>
+		<script>
+
+
+			// Generate the wordy table
+
+			wordyTableTbody = $("#wordy-table tbody");
+
+			// Sort wordData
+
+			var keys = [];
+			for (k in wordData) {
+			  if (wordData.hasOwnProperty(k)) {
+			    keys.push(k);
+			  }
+			}
+			keys.sort();
+
+
+			// Calculate longest row
+
+			longestRow = 0;
+			for (var key in wordData) {
+				if (wordData.hasOwnProperty(key)) {
+					if(wordData[key].length > longestRow) {
+						longestRow = wordData[key].length;
+					}
+				}
+			}
+
+			console.log(longestRow);
+
+			var addToTable = ""
+
+			for (var i in keys) {
+				var key = keys[i]
+				if (wordData.hasOwnProperty(key)) {
+
+					//addToTable = "";
+					//console.log(key + " -> " + wordData[key]);
+
+					var nEmptyTds = longestRow - wordData[key].length;
+
+					addToTable += "<tr>";
+					addToTable += "<td class=\"nine-jumbled\">" + key + "</td>";
+					for(var wordIndex in wordData[key]) {
+						if(wordData[key][wordIndex].length == 9) {
+							addToTable += "<td class=\"nine\">" + wordData[key][wordIndex] + "</td>";
+						} else {
+							addToTable += "<td>" + wordData[key][wordIndex] + "</td>";
+						}
+					}
+					for(var k = 0; k < nEmptyTds; k++) {
+						addToTable += "<td></td>";
+					}
+
+
+					addToTable += "</tr>";	
+
+
+
+
+				}
+			}
+
+			wordyTableTbody.html(wordyTableTbody.html() + addToTable);
+
+
+
+
+
+
+
+		</script>
+
+
+
+	</body>
+</html>
